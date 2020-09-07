@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnOpen = new System.Windows.Forms.Button();
-            this.BtnSave = new System.Windows.Forms.Button();
-            this.CmboxSearch = new System.Windows.Forms.ComboBox();
-            this.TxtboxSearch = new System.Windows.Forms.TextBox();
             this.BtnSearch = new System.Windows.Forms.Button();
+            this.TxtboxSearch = new System.Windows.Forms.TextBox();
+            this.CmboxSearch = new System.Windows.Forms.ComboBox();
+            this.BtnSave = new System.Windows.Forms.Button();
+            this.BtnOpen = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -52,14 +52,29 @@
             this.panel1.Size = new System.Drawing.Size(800, 40);
             this.panel1.TabIndex = 0;
             // 
-            // BtnOpen
+            // BtnSearch
             // 
-            this.BtnOpen.Location = new System.Drawing.Point(30, 9);
-            this.BtnOpen.Name = "BtnOpen";
-            this.BtnOpen.Size = new System.Drawing.Size(111, 23);
-            this.BtnOpen.TabIndex = 0;
-            this.BtnOpen.Text = "打开DBF文件";
-            this.BtnOpen.UseVisualStyleBackColor = true;
+            this.BtnSearch.Location = new System.Drawing.Point(682, 9);
+            this.BtnSearch.Name = "BtnSearch";
+            this.BtnSearch.Size = new System.Drawing.Size(75, 23);
+            this.BtnSearch.TabIndex = 4;
+            this.BtnSearch.Text = "查询";
+            this.BtnSearch.UseVisualStyleBackColor = true;
+            // 
+            // TxtboxSearch
+            // 
+            this.TxtboxSearch.Location = new System.Drawing.Point(490, 10);
+            this.TxtboxSearch.Name = "TxtboxSearch";
+            this.TxtboxSearch.Size = new System.Drawing.Size(169, 21);
+            this.TxtboxSearch.TabIndex = 3;
+            // 
+            // CmboxSearch
+            // 
+            this.CmboxSearch.FormattingEnabled = true;
+            this.CmboxSearch.Location = new System.Drawing.Point(298, 10);
+            this.CmboxSearch.Name = "CmboxSearch";
+            this.CmboxSearch.Size = new System.Drawing.Size(169, 20);
+            this.CmboxSearch.TabIndex = 2;
             // 
             // BtnSave
             // 
@@ -70,29 +85,15 @@
             this.BtnSave.Text = "保存Excel文件";
             this.BtnSave.UseVisualStyleBackColor = true;
             // 
-            // CmboxSearch
+            // BtnOpen
             // 
-            this.CmboxSearch.FormattingEnabled = true;
-            this.CmboxSearch.Location = new System.Drawing.Point(298, 10);
-            this.CmboxSearch.Name = "CmboxSearch";
-            this.CmboxSearch.Size = new System.Drawing.Size(169, 20);
-            this.CmboxSearch.TabIndex = 2;
-            // 
-            // TxtboxSearch
-            // 
-            this.TxtboxSearch.Location = new System.Drawing.Point(490, 10);
-            this.TxtboxSearch.Name = "TxtboxSearch";
-            this.TxtboxSearch.Size = new System.Drawing.Size(169, 21);
-            this.TxtboxSearch.TabIndex = 3;
-            // 
-            // BtnSearch
-            // 
-            this.BtnSearch.Location = new System.Drawing.Point(682, 9);
-            this.BtnSearch.Name = "BtnSearch";
-            this.BtnSearch.Size = new System.Drawing.Size(75, 23);
-            this.BtnSearch.TabIndex = 4;
-            this.BtnSearch.Text = "查询";
-            this.BtnSearch.UseVisualStyleBackColor = true;
+            this.BtnOpen.Location = new System.Drawing.Point(30, 9);
+            this.BtnOpen.Name = "BtnOpen";
+            this.BtnOpen.Size = new System.Drawing.Size(111, 23);
+            this.BtnOpen.TabIndex = 0;
+            this.BtnOpen.Text = "打开DBF文件";
+            this.BtnOpen.UseVisualStyleBackColor = true;
+            this.BtnOpen.Click += new System.EventHandler(this.BtnOpen_Click);
             // 
             // dataGridView1
             // 

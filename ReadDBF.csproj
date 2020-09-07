@@ -70,6 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbfHeader.cs" />
     <Compile Include="ReadDBF.cs">
       <SubType>Form</SubType>
     </Compile>
