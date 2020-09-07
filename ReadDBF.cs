@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace ReadDBF
 {
-    public partial class Form1 : Form
+    public partial class ReadDBF : Form
     {
-        public Form1()
+        public ReadDBF()
         {
             InitializeComponent();
         }
+        
+
     }
 }
