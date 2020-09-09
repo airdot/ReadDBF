@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReadDBF));
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnSearch = new System.Windows.Forms.Button();
             this.TxtboxSearch = new System.Windows.Forms.TextBox();
@@ -60,6 +61,7 @@
             this.BtnSearch.TabIndex = 4;
             this.BtnSearch.Text = "查询";
             this.BtnSearch.UseVisualStyleBackColor = true;
+            this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // TxtboxSearch
             // 
@@ -84,6 +86,7 @@
             this.BtnSave.TabIndex = 1;
             this.BtnSave.Text = "保存Excel文件";
             this.BtnSave.UseVisualStyleBackColor = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // BtnOpen
             // 
@@ -112,6 +115,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReadDBF";
             this.Text = "ReadDBF";
             this.panel1.ResumeLayout(false);
